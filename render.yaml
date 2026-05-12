@@ -4,7 +4,6 @@ databases:
   - name: codesync-db
     plan: free
     databaseName: codesync
-    user: postgres
 
 services:
   # 1. Combined Backend (Runs all 7 services + Gateway)
