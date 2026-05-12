@@ -1,0 +1,238 @@
+.editor-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.editor-navbar {
+  height: 50px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #252526;
+}
+
+.brand { font-weight: bold; font-size: 18px; color: #3b82f6; }
+
+.run-btn, .save-btn, .snap-btn {
+  background: #3b82f6; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; margin-right: 10px;
+}
+.save-btn { background: #3b82f6; }
+.snap-btn { background: #8b5cf6; }
+.collab-btn {
+  background: transparent; color: #3b82f6; border: 1px solid #3b82f6; padding: 6px 15px; border-radius: 4px; cursor: pointer;
+}
+.collab-btn.disconnected {
+  color: #ef4444; border: 1px solid #ef4444; /* Tailwind red-500 */
+}
+
+.editor-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.file-tree {
+  width: 250px;
+  background-color: #252526;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.tree-header {
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-file-btn {
+  background: transparent;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 10px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.new-file-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  padding: 8px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.file-list li:hover { background-color: #2a2d2e; }
+.file-list li.active { background-color: #37373d; color: white; }
+
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  background-color: #2d2d2d;
+  height: 35px;
+}
+
+.tab {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.monaco-container {
+  flex: 1;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  position: relative;
+}
+
+:host ::ng-deep ngx-monaco-editor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+:host ::ng-deep .editor-container {
+  height: 100%;
+  width: 100%;
+}
+
+.output-panel {
+  height: 35px;
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  transition: height 0.3s ease;
+}
+
+.output-panel.expanded {
+  height: 300px;
+}
+
+.output-header {
+  height: 35px;
+  background-color: #252526;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.output-header:hover {
+  color: #fff;
+}
+
+.output-content {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+}
+
+.output-content pre {
+  margin: 0;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 13px;
+  color: #a0aec0;
+  white-space: pre-wrap;
+}
+
+.run-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Snapshots UI */
+.snapshots-sidebar {
+  width: 250px;
+  background-color: #252526;
+  border-left: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: transparent;
+  color: #999;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.close-btn:hover { color: white; }
+
+.snapshot-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.snap-msg {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.snap-date {
+  color: #888;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.restore-btn {
+  background: transparent;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  width: 100%;
+}
+.restore-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
