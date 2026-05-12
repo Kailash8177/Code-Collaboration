@@ -1,0 +1,36 @@
+<div class="dashboard-layout">
+  <!-- Sidebar / Nav -->
+  <aside class="sidebar">
+    <div class="brand">CodeSync</div>
+    <nav>
+      <a routerLink="/dashboard">My Projects</a>
+      <a routerLink="/explore" class="active">Explore Public</a>
+    </nav>
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <header>
+      <h1>Explore Public Projects</h1>
+    </header>
+
+    <div class="projects-grid">
+      <div *ngIf="projects.length === 0" class="empty-state">
+        <p>No public projects found.</p>
+      </div>
+
+      <div class="project-card" *ngFor="let p of projects" [routerLink]="['/editor', p.projectId, 0]">
+        <div class="card-header">
+          <h3>{{ p.name }}</h3>
+          <span class="badge">{{ p.language }}</span>
+        </div>
+        <p class="desc">{{ p.description }}</p>
+        <div class="card-footer">
+          <span>⭐ {{ p.starCount }}</span>
+          <span>By User #{{ p.ownerId }}</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

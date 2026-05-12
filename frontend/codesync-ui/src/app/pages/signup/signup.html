@@ -1,0 +1,32 @@
+<div class="signup-container">
+  <div class="signup-card">
+    <h2>Create an Account</h2>
+    <p>Join CodeSync to collaborate with others</p>
+
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="John Doe" [(ngModel)]="fullName" name="fullName">
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="johndoe123" [(ngModel)]="username" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="john@example.com" [(ngModel)]="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Create a strong password" [(ngModel)]="password" name="password">
+    </div>
+
+    <button class="signup-btn" (click)="onSignup()">Sign Up</button>
+
+    <div class="footer-text">
+      Already have an account? <a routerLink="/login">Log in</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<nav class="navbar">
+  <div class="nav-brand">
+    <a routerLink="/" class="brand-link">CodeSync</a>
+  </div>
+
+  <div class="nav-links">
+    <!-- Links for GUESTS -->
+    <ng-container *ngIf="!authService.isLoggedIn()">
+      <a routerLink="/explore">Explore</a>
+      <a routerLink="/login" class="login-link">Login</a>
+      <a routerLink="/signup" class="signup-link">Sign Up</a>
+    </ng-container>
+
+    <!-- Links for LOGGED IN USERS -->
+    <ng-container *ngIf="authService.isLoggedIn()">
+      <a routerLink="/dashboard" class="nav-link" *ngIf="isLoggedIn">Dashboard</a>
+      <a routerLink="/explore" class="nav-link">Explore</a>
+      <a routerLink="/admin" class="nav-link admin-link" *ngIf="isAdmin">Admin Panel</a>
+      
+      <!-- Notifications -->
+      <div class="notification-wrapper">
+        <button class="bell-btn" (click)="toggleNotifications()">
+          🔔 <span class="badge" *ngIf="unreadCount > 0">{{ unreadCount }}</span>
+        </button>
+        <div class="notification-dropdown" *ngIf="showDropdown">
+          <div class="dropdown-header">
+            <span>Notifications</span>
+            <button *ngIf="notifications.length > 0" class="clear-all-btn" (click)="markAllRead()">Clear All</button>
+          </div>
+          <div class="dropdown-body">
+            <div *ngIf="notifications.length === 0" class="empty-notif">No new notifications</div>
+            <div class="notif-item" *ngFor="let n of notifications" [class.unread]="!n.isRead" (click)="markRead(n.id)">
+              {{ n.message }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Profile -->
+      <div class="user-profile-wrapper">
+        <div class="user-avatar" (click)="toggleProfile()">
+          {{ username ? username.charAt(0).toUpperCase() : 'U' }}
+        </div>
+        <div class="user-dropdown" *ngIf="showProfile">
+          <div class="user-name">{{ username }}</div>
+          <div class="user-email">{{ email }}</div>
+        </div>
+      </div>
+
+      <button class="logout-link" (click)="logout()">Logout</button>
+    </ng-container>
+  </div>
+</nav>
