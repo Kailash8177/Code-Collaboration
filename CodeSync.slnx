@@ -1,0 +1,18 @@
+<Solution>
+  <Project Path="CodeSync.Auth/CodeSync.Auth.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.Auth.Tests/CodeSync.Auth.Tests.csproj" />
+  <Project Path="CodeSync.Collab/CodeSync.Collab.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.Collab.Tests/CodeSync.Collab.Tests.csproj" />
+  <Project Path="CodeSync.Events/CodeSync.Events.csproj" />
+  <Project Path="CodeSync.Execution/CodeSync.Execution.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.Execution.Tests/CodeSync.Execution.Tests.csproj" />
+  <Project Path="CodeSync.File/CodeSync.File.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.File.Tests/CodeSync.File.Tests.csproj" />
+  <Project Path="CodeSync.Gateway/CodeSync.Gateway.csproj" />
+  <Project Path="CodeSync.Notification/CodeSync.Notification.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.Notification.Tests/CodeSync.Notification.Tests.csproj" />
+  <Project Path="CodeSync.Project/CodeSync.Project.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.Project.Tests/CodeSync.Project.Tests.csproj" />
+  <Project Path="CodeSync.ReviewHub/CodeSync.ReviewHub.csproj" />
+  <Project Path="CodeSync.Test/CodeSync.ReviewHub.Tests/CodeSync.ReviewHub.Tests.csproj" />
+</Solution>
