@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  gatewayUrl: '/gateway' // Assuming the frontend is served from the same domain or a proxy is used
+  gatewayUrl: 'https://codesync-api-all.onrender.com/gateway' // Connect directly to backend for WebSocket support
 };
