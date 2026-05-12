@@ -1,0 +1,140 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  gateway:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Gateway/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ReverseProxy__Clusters__auth-cluster__Destinations__auth-primary__Address=http://auth:8080/
+      - ReverseProxy__Clusters__project-cluster__Destinations__project-primary__Address=http://project:8080/
+      - ReverseProxy__Clusters__file-cluster__Destinations__file-primary__Address=http://file:8080/
+      - ReverseProxy__Clusters__collab-cluster__Destinations__collab-primary__Address=http://collab:8080/
+      - ReverseProxy__Clusters__execution-cluster__Destinations__execution-primary__Address=http://execution:8080/
+      - ReverseProxy__Clusters__reviewhub-cluster__Destinations__reviewhub-primary__Address=http://reviewhub:8080/
+      - ReverseProxy__Clusters__notification-cluster__Destinations__notification-primary__Address=http://notification:8080/
+      - Jwt__Secret=CodeSync_PRODUCTION_Secret_Key_Change_Me_Now!!
+    ports:
+      - "5000:8080"
+    depends_on:
+      - auth
+      - project
+      - file
+      - collab
+      - execution
+      - notification
+      - reviewhub
+
+  auth:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Auth/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__AuthDb=Host=db;Database=codesync_auth;Username=postgres;Password=password
+      - Jwt__Secret=CodeSync_PRODUCTION_Secret_Key_Change_Me_Now!!
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+
+  project:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Project/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__ProjectDb=Host=db;Database=codesync_project;Username=postgres;Password=password
+      - Jwt__Secret=CodeSync_PRODUCTION_Secret_Key_Change_Me_Now!!
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+
+  file:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.File/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__FileDb=Host=db;Database=codesync_file;Username=postgres;Password=password
+      - Jwt__Secret=CodeSync_PRODUCTION_Secret_Key_Change_Me_Now!!
+    depends_on:
+      - db
+
+  collab:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Collab/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__CollabDb=Host=db;Database=codesync_collab;Username=postgres;Password=password
+      - Jwt__Secret=CodeSync_PRODUCTION_Secret_Key_Change_Me_Now!!
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+
+  execution:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Execution/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__ExecutionDb=Host=db;Database=codesync_execution;Username=postgres;Password=password
+    depends_on:
+      - db
+
+  notification:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.Notification/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__NotificationDb=Host=db;Database=codesync_notification;Username=postgres;Password=password
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+
+  reviewhub:
+    build:
+      context: .
+      dockerfile: backend/CodeSync.ReviewHub/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__ReviewHubDb=Host=db;Database=codesync_reviewhub;Username=postgres;Password=password
+      - RabbitMQ__Host=rabbitmq
+    depends_on:
+      - db
+      - rabbitmq
+
+  frontend:
+    build:
+      context: ./frontend/codesync-ui
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - gateway
+
+volumes:
+  postgres_data:

@@ -1,0 +1,55 @@
+# 1. Build Stage
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copy everything
+COPY . .
+
+# Restore all projects using the solution file
+RUN dotnet restore "backend/CodeSync.slnx"
+
+# Publish all microservices to separate folders
+RUN dotnet publish "backend/CodeSync.Gateway/CodeSync.Gateway.csproj" -c Release -o /app/gateway
+RUN dotnet publish "backend/CodeSync.Auth/CodeSync.Auth.csproj" -c Release -o /app/auth
+RUN dotnet publish "backend/CodeSync.Collab/CodeSync.Collab.csproj" -c Release -o /app/collab
+RUN dotnet publish "backend/CodeSync.Project/CodeSync.Project.csproj" -c Release -o /app/project
+RUN dotnet publish "backend/CodeSync.File/CodeSync.File.csproj" -c Release -o /app/file
+RUN dotnet publish "backend/CodeSync.Execution/CodeSync.Execution.csproj" -c Release -o /app/execution
+RUN dotnet publish "backend/CodeSync.Notification/CodeSync.Notification.csproj" -c Release -o /app/notification
+RUN dotnet publish "backend/CodeSync.ReviewHub/CodeSync.ReviewHub.csproj" -c Release -o /app/reviewhub
+
+# 2. Runtime Stage
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
+
+# Install procps to allow process management if needed
+RUN apt-get update && apt-get install -y procps && rm -rf /var/lib/apt/lists/*
+
+# Copy the published outputs from the build stage
+COPY --from=build /app /app
+
+# Create a master startup script that runs all services in the background
+# We assign different internal ports to each service so they don't clash
+RUN echo '#!/bin/bash\n\
+# Start microservices on internal ports\n\
+ASPNETCORE_URLS=http://+:5001 dotnet /app/auth/CodeSync.Auth.dll &\n\
+ASPNETCORE_URLS=http://+:5002 dotnet /app/project/CodeSync.Project.dll &\n\
+ASPNETCORE_URLS=http://+:5003 dotnet /app/file/CodeSync.File.dll &\n\
+ASPNETCORE_URLS=http://+:5004 dotnet /app/collab/CodeSync.Collab.dll &\n\
+ASPNETCORE_URLS=http://+:5005 dotnet /app/execution/CodeSync.Execution.dll &\n\
+ASPNETCORE_URLS=http://+:5006 dotnet /app/notification/CodeSync.Notification.dll &\n\
+ASPNETCORE_URLS=http://+:5007 dotnet /app/reviewhub/CodeSync.ReviewHub.dll &\n\
+\n\
+# Start the Gateway on port 10000 (exposed to the internet)\n\
+ASPNETCORE_URLS=http://+:10000 dotnet /app/gateway/CodeSync.Gateway.dll\n\
+\n\
+# Wait for all processes to finish\n\
+wait -n\n\
+exit $?' > /app/start.sh
+
+RUN chmod +x /app/start.sh
+
+# Expose the Gateway port
+EXPOSE 10000
+
+ENTRYPOINT ["/app/start.sh"]

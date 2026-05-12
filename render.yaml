@@ -1,0 +1,64 @@
+version: "1"
+
+databases:
+  - name: codesync-db
+    plan: free
+    databaseName: codesync
+    user: postgres
+
+services:
+  # 1. Combined Backend (Runs all 7 services + Gateway)
+  - type: web
+    name: codesync-api-all
+    env: docker
+    dockerfilePath: ./Dockerfile.combined
+    plan: free
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__AuthDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__ProjectDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__FileDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__CollabDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__ExecutionDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__NotificationDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: ConnectionStrings__ReviewHubDb
+        fromDatabase:
+          name: codesync-db
+          property: connectionString
+      - key: Jwt__Secret
+        generateValue: true
+
+  # 2. Frontend (Angular UI)
+  - type: web
+    name: codesync-ui
+    env: static
+    buildCommand: cd frontend/codesync-ui && npm install && npm run build -- --configuration production
+    staticPublishPath: ./frontend/codesync-ui/dist/codesync-ui/browser
+    routes:
+      # Proxy all API calls to the combined backend
+      - type: rewrite
+        source: /gateway/*
+        destination: https://codesync-api-all.onrender.com/gateway/*
+      # Single Page Application (SPA) routing
+      - type: rewrite
+        source: /*
+        destination: /index.html
