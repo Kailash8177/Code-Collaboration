@@ -1,0 +1,24 @@
+E:\code-colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.deps.json
+E:\code-colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.dll
+E:\code-colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.pdb
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.AssemblyReference.cache
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.GeneratedMSBuildEditorConfig.editorconfig
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfoInputs.cache
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfo.cs
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.CoreCompileInputs.cache
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.dll
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\refint\CodeSync.Events.dll
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.pdb
+E:\code-colabration\backend\CodeSync.Events\obj\Debug\net8.0\ref\CodeSync.Events.dll
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.deps.json
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.dll
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.pdb
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfoInputs.cache
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfo.cs
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.dll
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\refint\CodeSync.Events.dll
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.pdb
+C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\ref\CodeSync.Events.dll
