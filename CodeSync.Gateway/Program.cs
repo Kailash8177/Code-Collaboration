@@ -98,10 +98,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CodeSyncCors", policy =>
     {
         policy
-            .WithOrigins(
-                "http://localhost:4200",     // Angular dev
-                "http://localhost:3000"      // optional React dev
-            )
+            .SetIsOriginAllowed(_ => true)   // Allow any origin (Required for Render dynamic URLs)
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();            // needed for SignalR
