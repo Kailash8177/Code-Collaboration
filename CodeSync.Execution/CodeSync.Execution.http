@@ -1,0 +1,6 @@
+@CodeSync.Execution_HostAddress = http://localhost:5262
+
+GET {{CodeSync.Execution_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
