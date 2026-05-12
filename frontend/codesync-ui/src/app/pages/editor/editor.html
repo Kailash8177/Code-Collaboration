@@ -1,0 +1,81 @@
+<div class="editor-layout">
+  <header class="editor-navbar">
+    <div class="brand"><a routerLink="/dashboard" style="color:white; text-decoration:none;">CodeSync</a></div>
+    <div class="project-info">Project ID: {{ projectId }}</div>
+    <div class="actions">
+      <button class="snap-btn" (click)="toggleSnapshotsPanel()" *ngIf="fileId > 0" [class.active]="showSnapshotsPanel">🕒 History</button>
+      <button class="snap-btn" (click)="createSnapshot()" *ngIf="fileId > 0">📸 Snapshot</button>
+      <button class="save-btn" (click)="saveFile()" *ngIf="fileId > 0">💾 Save File</button>
+      <button class="run-btn" (click)="runCode()" [disabled]="isExecuting">
+        {{ isExecuting ? 'Running...' : '▶ Run Code' }}
+      </button>
+      <button class="collab-btn" [class.disconnected]="!isCollabActive" (click)="toggleCollabSession()" *ngIf="fileId > 0">
+        {{ isCollabActive ? 'Leave Session' : 'Join Session' }}
+      </button>
+    </div>
+  </header>
+
+  <div class="editor-main">
+    <!-- File Tree Sidebar -->
+    <aside class="file-tree">
+      <div class="tree-header">
+        <span>FILES</span>
+        <button class="new-file-btn" (click)="createNewFile()">+ File</button>
+      </div>
+      <div class="tree-content">
+        <div *ngIf="fileTree.length === 0" style="padding:10px; color:#666; font-size:12px;">No files yet.</div>
+        <ul class="file-list">
+          <li *ngFor="let node of fileTree" (click)="openFile(node.fileId)" [class.active]="node.fileId === fileId">
+            📄 {{ node.name }}
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Code Editor Area & Output Panel -->
+    <div class="editor-area">
+      <div class="tabs">
+        <div class="tab active">{{ currentFileName }}</div>
+      </div>
+      
+      <div class="monaco-container">
+        <ngx-monaco-editor 
+          [options]="editorOptions" 
+          [(ngModel)]="code" 
+          (ngModelChange)="onCodeChange($event)"
+          style="height: 100%; width: 100%;">
+        </ngx-monaco-editor>
+      </div>
+
+      <!-- Execution Output Panel -->
+      <div class="output-panel" [class.expanded]="showOutputPanel">
+        <div class="output-header" (click)="toggleOutputPanel()">
+          <span>TERMINAL OUTPUT</span>
+          <span>{{ showOutputPanel ? '▼' : '▲' }}</span>
+        </div>
+        <div class="output-content" *ngIf="showOutputPanel">
+          <pre>{{ executionOutput || 'No output. Click Run Code to execute.' }}</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snapshots Sidebar -->
+    <aside class="snapshots-sidebar" *ngIf="showSnapshotsPanel">
+      <div class="tree-header">
+        <span>SNAPSHOT HISTORY</span>
+        <button class="close-btn" (click)="toggleSnapshotsPanel()">✖</button>
+      </div>
+      <div class="tree-content" style="padding: 10px;">
+        <div *ngIf="snapshots.length === 0" style="color: #666; font-size: 12px; text-align: center; margin-top: 20px;">
+          No snapshots found.<br>Click "📸 Snapshot" to create one!
+        </div>
+        
+        <div class="snapshot-card" *ngFor="let snap of snapshots">
+          <div class="snap-msg">{{ snap.message }}</div>
+          <div class="snap-date">{{ snap.createdAt | date:'short' }}</div>
+          <button class="restore-btn" (click)="restoreSnapshot(snap)">Restore Code</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>

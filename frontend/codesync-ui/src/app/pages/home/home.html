@@ -1,0 +1,32 @@
+<div class="hero-container">
+  <div class="hero-content">
+    <h1 class="hero-title">Code, Collaborate, and Ship <span class="highlight">Together</span></h1>
+    <p class="hero-subtitle">
+      CodeSync is the ultimate browser-based development environment. 
+      Spin up a workspace, invite your team, and write code in real-time.
+    </p>
+    
+    <div class="hero-actions" *ngIf="!authService.isLoggedIn()">
+      <a routerLink="/signup" class="btn-primary">Get Started for Free</a>
+      <a routerLink="/explore" class="btn-secondary">Explore Projects</a>
+    </div>
+
+    <div class="hero-actions" *ngIf="authService.isLoggedIn()">
+      <a routerLink="/dashboard" class="btn-primary">Go to Dashboard</a>
+    </div>
+  </div>
+
+  <!-- Decorative Editor Mockup -->
+  <div class="hero-mockup">
+    <div class="mockup-header">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <div class="mockup-title">main.ts - CodeSync</div>
+    </div>
+    <div class="mockup-body">
+      <code><span class="keyword">function</span> <span class="function">collaborate</span>() &#123;</code><br>
+      <code>&nbsp;&nbsp;<span class="keyword">const</span> team = <span class="keyword">await</span> <span class="object">CodeSync</span>.<span class="function">invite</span>();</code><br>
+      <code>&nbsp;&nbsp;<span class="keyword">return</span> team.<span class="function">buildAwesomeThings</span>();</code><br>
+      <code>&#125;</code>
+    </div>
+  </div>
+</div>

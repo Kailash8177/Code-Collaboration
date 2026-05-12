@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <p>Sign in to CodeSync to continue</p>
+
+    <div class="form-group">
+      <label for="username">Username or Email</label>
+      <!-- Added [(ngModel)] and name -->
+      <input type="text" id="username" placeholder="Enter your username" [(ngModel)]="username" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <!-- Added [(ngModel)] and name -->
+      <input type="password" id="password" placeholder="Enter your password" [(ngModel)]="password" name="password">
+    </div>
+
+    <!-- Added (click) event to trigger the function -->
+    <button class="login-btn" (click)="onLogin()">Login</button>
+
+    <div class="footer-text">
+      Don't have an account? <a routerLink="/signup">Sign up</a>
+    </div>
+  </div>
+</div>

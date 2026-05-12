@@ -1,0 +1,91 @@
+<div class="admin-container">
+  <h1>🛡️ Admin Portal</h1>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn" [class.active]="activeTab === 'users'" (click)="activeTab = 'users'">Users</button>
+    <button class="tab-btn" [class.active]="activeTab === 'projects'" (click)="activeTab = 'projects'">Projects</button>
+  </div>
+
+  <!-- User Management Section -->
+  <div class="card" *ngIf="activeTab === 'users'">
+    <h2>Platform Users</h2>
+    <p>Manage and moderate user accounts.</p>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Joined</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.userId }}</td>
+            <td><strong>{{ user.username }}</strong></td>
+            <td>{{ user.email }}</td>
+            <td>
+              <span class="badge" [class.active]="user.isActive" [class.inactive]="!user.isActive">
+                {{ user.isActive ? 'Active' : 'Banned' }}
+              </span>
+            </td>
+            <td>{{ user.createdAt | date:'mediumDate' }}</td>
+            <td>
+              <button *ngIf="user.isActive" class="btn btn-danger btn-sm" (click)="deactivateUser(user)">
+                Ban User
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="users.length === 0">
+            <td colspan="6" class="text-center">No users found.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Project Management Section -->
+  <div class="card" *ngIf="activeTab === 'projects'">
+    <h2>Platform Projects</h2>
+    <p>Oversight of all created projects.</p>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Project Name</th>
+            <th>Owner ID</th>
+            <th>Language</th>
+            <th>Visibility</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of projects">
+            <td>{{ p.projectId }}</td>
+            <td><strong>{{ p.name }}</strong></td>
+            <td>{{ p.ownerId }}</td>
+            <td>{{ p.language }}</td>
+            <td>
+              <span class="badge" [class.active]="p.visibility === 'PUBLIC'" [class.inactive]="p.visibility !== 'PUBLIC'">
+                {{ p.visibility }}
+              </span>
+            </td>
+            <td>
+              <button class="btn btn-danger btn-sm" (click)="deleteProject(p)">Delete</button>
+            </td>
+          </tr>
+          <tr *ngIf="projects.length === 0">
+            <td colspan="6" class="text-center">No projects found.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
