@@ -27,23 +27,42 @@ RUN apt-get update && \
 # Copy the published outputs from the build stage
 COPY --from=build /app /app
 
-# Create a master startup script that runs all services in the background
-# We assign different internal ports to each service so they don't clash
+# Create a master startup script that runs all services sequentially with memory limits
 RUN echo '#!/bin/bash\n\
-# Start microservices on internal ports to match Gateway\n\
-echo "Starting Auth..." && ASPNETCORE_URLS=http://+:7001 dotnet /app/auth/CodeSync.Auth.dll &\n\
-echo "Starting Project..." && ASPNETCORE_URLS=http://+:7002 dotnet /app/project/CodeSync.Project.dll &\n\
-echo "Starting File..." && ASPNETCORE_URLS=http://+:7003 dotnet /app/file/CodeSync.File.dll &\n\
-echo "Starting Collab..." && ASPNETCORE_URLS=http://+:7004 dotnet /app/collab/CodeSync.Collab.dll &\n\
-echo "Starting Execution..." && ASPNETCORE_URLS=http://+:7005 dotnet /app/execution/CodeSync.Execution.dll &\n\
-echo "Starting Notification..." && ASPNETCORE_URLS=http://+:7007 dotnet /app/notification/CodeSync.Notification.dll &\n\
-echo "Starting ReviewHub..." && ASPNETCORE_URLS=http://+:7006 dotnet /app/reviewhub/CodeSync.ReviewHub.dll &\n\
+# Set memory limits for .NET to fit in 512MB RAM total\n\
+export DOTNET_GCHeapHardLimit=60000000 # ~60MB per service\n\
 \n\
-# Give services a moment to start\n\
+echo "Starting Auth (7001)..."\n\
+ASPNETCORE_URLS=http://+:7001 dotnet /app/auth/CodeSync.Auth.dll &\n\
+sleep 5\n\
+\n\
+echo "Starting Project (7002)..."\n\
+ASPNETCORE_URLS=http://+:7002 dotnet /app/project/CodeSync.Project.dll &\n\
+sleep 3\n\
+\n\
+echo "Starting File (7003)..."\n\
+ASPNETCORE_URLS=http://+:7003 dotnet /app/file/CodeSync.File.dll &\n\
+sleep 2\n\
+\n\
+echo "Starting Collab (7004)..."\n\
+ASPNETCORE_URLS=http://+:7004 dotnet /app/collab/CodeSync.Collab.dll &\n\
+sleep 2\n\
+\n\
+echo "Starting Execution (7005)..."\n\
+ASPNETCORE_URLS=http://+:7005 dotnet /app/execution/CodeSync.Execution.dll &\n\
+sleep 2\n\
+\n\
+echo "Starting Notification (7007)..."\n\
+ASPNETCORE_URLS=http://+:7007 dotnet /app/notification/CodeSync.Notification.dll &\n\
+sleep 2\n\
+\n\
+echo "Starting ReviewHub (7006)..."\n\
+ASPNETCORE_URLS=http://+:7006 dotnet /app/reviewhub/CodeSync.ReviewHub.dll &\n\
 sleep 5\n\
 \n\
 # Start the Gateway on port 10000 (exposed to the internet)\n\
 echo "Starting Gateway on port 10000..."\n\
+export DOTNET_GCHeapHardLimit=100000000 # ~100MB for Gateway\n\
 ASPNETCORE_URLS=http://+:10000 dotnet /app/gateway/CodeSync.Gateway.dll' > /app/start.sh
 
 RUN chmod +x /app/start.sh
