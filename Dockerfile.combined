@@ -29,27 +29,36 @@ COPY --from=build /app /app
 
 # Create a master startup script that runs all services sequentially with memory limits
 RUN echo '#!/bin/bash\n\
-# Convert postgres:// URI to ADO.NET connection string format for all ConnectionStrings__* variables\n\
-for var in $(env | awk -F= '\''/^ConnectionStrings__/ {print $1}'\''); do\n\
-  val="${!var}"\n\
-  if [[ "$val" == postgres://* ]] || [[ "$val" == postgresql://* ]]; then\n\
-    url_no_proto="${val#*://}"\n\
-    user_pass="${url_no_proto%@*}"\n\
-    host_port_db="${url_no_proto##*@}"\n\
-    user="${user_pass%%:*}"\n\
-    pass="${user_pass#*:}"\n\
-    host_port="${host_port_db%%/*}"\n\
-    db="${host_port_db#*/}"\n\
-    host="${host_port%:*}"\n\
-    if [[ "$host_port" == *:* ]]; then\n\
-        port="${host_port##*:}"\n\
-    else\n\
-        port="5432"\n\
-    fi\n\
-    new_conn="Host=$host;Port=$port;Database=$db;Username=$user;Password=$pass;SSL Mode=Require;Trust Server Certificate=true;"\n\
-    export "$var"="$new_conn"\n\
-  fi\n\
-done\n\
+# Find any postgres connection string (either DATABASE_URL or ConnectionStrings__AuthDb)
+db_uri="$DATABASE_URL"
+if [[ -z "$db_uri" ]]; then
+  for var in $(env | awk -F= '/^ConnectionStrings__/ {print $1}'); do
+    if [[ "${!var}" == postgres* ]]; then db_uri="${!var}"; break; fi
+  done
+fi
+
+if [[ -n "$db_uri" ]] && [[ "$db_uri" == postgres* ]]; then
+  url_no_proto="${db_uri#*://}"
+  user_pass="${url_no_proto%@*}"
+  host_port_db="${url_no_proto##*@}"
+  user="${user_pass%%:*}"
+  pass="${user_pass#*:}"
+  host_port="${host_port_db%%/*}"
+  db="${host_port_db#*/}"
+  host="${host_port%:*}"
+  if [[ "$host_port" == *:* ]]; then port="${host_port##*:}"; else port="5432"; fi
+  new_conn="Host=$host;Port=$port;Database=$db;Username=$user;Password=$pass;SSL Mode=Require;Trust Server Certificate=true;"
+  
+  # Apply to all microservices automatically
+  export ConnectionStrings__AuthDb="$new_conn"
+  export ConnectionStrings__ProjectDb="$new_conn"
+  export ConnectionStrings__FileDb="$new_conn"
+  export ConnectionStrings__CollabDb="$new_conn"
+  export ConnectionStrings__ExecutionDb="$new_conn"
+  export ConnectionStrings__ReviewHubDb="$new_conn"
+  export ConnectionStrings__NotificationDb="$new_conn"
+  echo "Database connection string successfully configured for all 7 microservices."
+fi
 \n\
 # Use Workstation GC to drastically reduce memory usage per service\n\
 export DOTNET_gcServer=0\n\
