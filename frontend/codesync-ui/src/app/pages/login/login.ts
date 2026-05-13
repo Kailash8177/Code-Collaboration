@@ -10,13 +10,13 @@ import { AuthService } from '../../services/auth';
   styleUrl: './login.css',
 })
 export class Login {
-  username = '';
+  email = '';
   password = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
   onLogin() {
-    this.authService.login(this.username, this.password).subscribe({
+    this.authService.login(this.email, this.password).subscribe({
       next: (response) => {
         if (response && response.token) {
           this.authService.saveToken(response.token);
@@ -25,7 +25,7 @@ export class Login {
       },
       error: (err) => {
         console.error(err);
-        alert('Login Failed. Please check your username and password.');
+        alert('Login Failed. Please check your email and password.');
       }
     });
   }
