@@ -31,20 +31,20 @@ COPY --from=build /app /app
 # We assign different internal ports to each service so they don't clash
 RUN echo '#!/bin/bash\n\
 # Start microservices on internal ports to match Gateway\n\
-ASPNETCORE_URLS=http://+:7001 dotnet /app/auth/CodeSync.Auth.dll &\n\
-ASPNETCORE_URLS=http://+:7002 dotnet /app/project/CodeSync.Project.dll &\n\
-ASPNETCORE_URLS=http://+:7003 dotnet /app/file/CodeSync.File.dll &\n\
-ASPNETCORE_URLS=http://+:7004 dotnet /app/collab/CodeSync.Collab.dll &\n\
-ASPNETCORE_URLS=http://+:7005 dotnet /app/execution/CodeSync.Execution.dll &\n\
-ASPNETCORE_URLS=http://+:7007 dotnet /app/notification/CodeSync.Notification.dll &\n\
-ASPNETCORE_URLS=http://+:7006 dotnet /app/reviewhub/CodeSync.ReviewHub.dll &\n\
+echo "Starting Auth..." && ASPNETCORE_URLS=http://+:7001 dotnet /app/auth/CodeSync.Auth.dll &\n\
+echo "Starting Project..." && ASPNETCORE_URLS=http://+:7002 dotnet /app/project/CodeSync.Project.dll &\n\
+echo "Starting File..." && ASPNETCORE_URLS=http://+:7003 dotnet /app/file/CodeSync.File.dll &\n\
+echo "Starting Collab..." && ASPNETCORE_URLS=http://+:7004 dotnet /app/collab/CodeSync.Collab.dll &\n\
+echo "Starting Execution..." && ASPNETCORE_URLS=http://+:7005 dotnet /app/execution/CodeSync.Execution.dll &\n\
+echo "Starting Notification..." && ASPNETCORE_URLS=http://+:7007 dotnet /app/notification/CodeSync.Notification.dll &\n\
+echo "Starting ReviewHub..." && ASPNETCORE_URLS=http://+:7006 dotnet /app/reviewhub/CodeSync.ReviewHub.dll &\n\
+\n\
+# Give services a moment to start\n\
+sleep 5\n\
 \n\
 # Start the Gateway on port 10000 (exposed to the internet)\n\
-ASPNETCORE_URLS=http://+:10000 dotnet /app/gateway/CodeSync.Gateway.dll\n\
-\n\
-# Wait for all processes to finish\n\
-wait -n\n\
-exit $?' > /app/start.sh
+echo "Starting Gateway on port 10000..."\n\
+ASPNETCORE_URLS=http://+:10000 dotnet /app/gateway/CodeSync.Gateway.dll' > /app/start.sh
 
 RUN chmod +x /app/start.sh
 
