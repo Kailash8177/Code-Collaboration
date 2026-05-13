@@ -59,7 +59,7 @@ builder.Services.AddMassTransit(x =>
 // ── CORS ──────────────────────────────────────────────────────────────────────
 builder.Services.AddCors(opt =>
     opt.AddPolicy("CodeSyncCors", policy =>
-        policy.WithOrigins("http://localhost:4200")
+        policy.SetIsOriginAllowed(_ => true)
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials()));
