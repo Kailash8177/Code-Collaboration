@@ -60,8 +60,13 @@ if [[ -n "$db_uri" ]] && [[ "$db_uri" == postgres* ]]; then\n\
   echo "Database connection string successfully configured for all 7 microservices."\n\
 fi\n\
 \n\
-# Use Workstation GC to drastically reduce memory usage per service\n\
+# Aggressive memory limits to prevent Render OOM crashes (512MB limit)\n\
 export DOTNET_gcServer=0\n\
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n\
+export DOTNET_GCHeapHardLimit=52428800\n\
+export DOTNET_ThreadPool_MinThreads=1\n\
+export DOTNET_ThreadPool_MaxThreads=20\n\
+\n\
 \n\
 echo "Starting Auth (7001)..."\n\
 (cd /app/auth && ASPNETCORE_URLS=http://+:7001 dotnet CodeSync.Auth.dll &)\n\
