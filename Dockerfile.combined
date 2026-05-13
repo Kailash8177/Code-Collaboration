@@ -56,35 +56,35 @@ export DOTNET_gcServer=0\n\
 \n\
 echo "Starting Auth (7001)..."\n\
 (cd /app/auth && ASPNETCORE_URLS=http://+:7001 dotnet CodeSync.Auth.dll &)\n\
-sleep 5\n\
+sleep 15\n\
 \n\
 echo "Starting Project (7002)..."\n\
 (cd /app/project && ASPNETCORE_URLS=http://+:7002 dotnet CodeSync.Project.dll &)\n\
-sleep 3\n\
+sleep 15\n\
 \n\
 echo "Starting File (7003)..."\n\
 (cd /app/file && ASPNETCORE_URLS=http://+:7003 dotnet CodeSync.File.dll &)\n\
-sleep 2\n\
+sleep 10\n\
 \n\
 echo "Starting Collab (7004)..."\n\
 (cd /app/collab && ASPNETCORE_URLS=http://+:7004 dotnet CodeSync.Collab.dll &)\n\
-sleep 2\n\
+sleep 5\n\
 \n\
 echo "Starting Execution (7005)..."\n\
 (cd /app/execution && ASPNETCORE_URLS=http://+:7005 dotnet CodeSync.Execution.dll &)\n\
-sleep 2\n\
+sleep 5\n\
 \n\
 echo "Starting Notification (7007)..."\n\
 (cd /app/notification && ASPNETCORE_URLS=http://+:7007 dotnet CodeSync.Notification.dll &)\n\
-sleep 2\n\
+sleep 5\n\
 \n\
 echo "Starting ReviewHub (7006)..."\n\
 (cd /app/reviewhub && ASPNETCORE_URLS=http://+:7006 dotnet CodeSync.ReviewHub.dll &)\n\
-sleep 5\n\
+sleep 15\n\
 \n\
 # Start the Gateway on port defined by Render ($PORT) or default to 10000\n\
 echo "Starting Gateway..."\n\
-cd /app/gateway && ASPNETCORE_URLS=http://0.0.0.0:${PORT:-10000} dotnet CodeSync.Gateway.dll' > /app/start.sh
+cd /app/gateway && dotnet CodeSync.Gateway.dll --urls "http://0.0.0.0:${PORT:-10000}"' > /app/start.sh
 
 RUN chmod +x /app/start.sh
 
