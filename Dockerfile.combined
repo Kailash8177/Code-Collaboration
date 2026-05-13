@@ -29,8 +29,8 @@ COPY --from=build /app /app
 
 # Create a master startup script that runs all services sequentially with memory limits
 RUN echo '#!/bin/bash\n\
-# Set memory limits for .NET to fit in 512MB RAM total\n\
-export DOTNET_GCHeapHardLimit=60000000 # ~60MB per service\n\
+# Use Workstation GC to drastically reduce memory usage per service\n\
+export DOTNET_gcServer=0\n\
 \n\
 echo "Starting Auth (7001)..."\n\
 (cd /app/auth && ASPNETCORE_URLS=http://+:7001 dotnet CodeSync.Auth.dll &)\n\
@@ -62,8 +62,7 @@ sleep 5\n\
 \n\
 # Start the Gateway on port defined by Render ($PORT) or default to 10000\n\
 echo "Starting Gateway..."\n\
-export DOTNET_GCHeapHardLimit=100000000 # ~100MB for Gateway\n\
-cd /app/gateway && ASPNETCORE_URLS=http://+:${PORT:-10000} dotnet CodeSync.Gateway.dll' > /app/start.sh
+cd /app/gateway && ASPNETCORE_URLS=http://0.0.0.0:${PORT:-10000} dotnet CodeSync.Gateway.dll' > /app/start.sh
 
 RUN chmod +x /app/start.sh
 
