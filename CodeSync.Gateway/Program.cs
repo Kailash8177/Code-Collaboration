@@ -175,14 +175,8 @@ builder.Services.AddSwaggerGen(c =>
 // 8. HEALTH CHECKS
 // ════════════════════════════════════════════════════════════════════════════
 builder.Services
-    .AddHealthChecks()
-    .AddUrlGroup(new Uri("http://localhost:7001/health"), name: "auth-service",        tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7002/health"), name: "project-service",     tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7003/health"), name: "file-service",        tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7004/health"), name: "collab-service",      tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7005/health"), name: "execution-service",   tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7006/health"), name: "reviewhub-service",   tags: ["services"])
-    .AddUrlGroup(new Uri("http://localhost:7007/health"), name: "notification-service",tags: ["services"]);
+    .AddHealthChecks(); // Only check if the Gateway itself is running
+
 
 // ════════════════════════════════════════════════════════════════════════════
 // BUILD
