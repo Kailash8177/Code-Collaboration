@@ -32,8 +32,8 @@ RUN echo '#!/bin/bash\n\
 # Convert postgres:// URI to ADO.NET connection string format for all ConnectionStrings__* variables\n\
 for var in $(env | awk -F= '\''/^ConnectionStrings__/ {print $1}'\''); do\n\
   val="${!var}"\n\
-  if [[ "$val" == postgres://* ]]; then\n\
-    url_no_proto="${val#postgres://}"\n\
+  if [[ "$val" == postgres://* ]] || [[ "$val" == postgresql://* ]]; then\n\
+    url_no_proto="${val#*://}"\n\
     user_pass="${url_no_proto%@*}"\n\
     host_port_db="${url_no_proto##*@}"\n\
     user="${user_pass%%:*}"\n\
