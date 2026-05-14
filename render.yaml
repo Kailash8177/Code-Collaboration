@@ -56,8 +56,8 @@ services:
   - type: web
     name: codesync-execution
     env: docker
-    rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.combined
+    rootDir: .
+    dockerfilePath: ./Dockerfile.combined
     plan: free
     envVars:
       - key: RUN_SERVICE_ONLY
@@ -75,8 +75,8 @@ services:
   - type: web
     name: codesync-notification
     env: docker
-    rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.combined
+    rootDir: .
+    dockerfilePath: ./Dockerfile.combined
     plan: free
     envVars:
       - key: RUN_SERVICE_ONLY
@@ -94,8 +94,8 @@ services:
   - type: web
     name: codesync-reviewhub
     env: docker
-    rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.combined
+    rootDir: .
+    dockerfilePath: ./Dockerfile.combined
     plan: free
     envVars:
       - key: RUN_SERVICE_ONLY
