@@ -57,7 +57,7 @@ services:
     name: codesync-execution
     env: docker
     rootDir: .
-    dockerfilePath: backend/CodeSync.Execution/Dockerfile
+    dockerfilePath: Dockerfile.execution
     plan: free
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
@@ -74,7 +74,7 @@ services:
     name: codesync-notification
     env: docker
     rootDir: .
-    dockerfilePath: backend/CodeSync.Notification/Dockerfile
+    dockerfilePath: Dockerfile.notification
     plan: free
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
@@ -91,7 +91,7 @@ services:
     name: codesync-reviewhub
     env: docker
     rootDir: .
-    dockerfilePath: backend/CodeSync.ReviewHub/Dockerfile
+    dockerfilePath: Dockerfile.reviewhub
     plan: free
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
