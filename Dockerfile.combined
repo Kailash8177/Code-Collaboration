@@ -64,6 +64,19 @@ fi\n\
 export DOTNET_gcServer=0\n\
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n\
 \n\
+# Support running a single separated service\n\
+if [[ "$RUN_SERVICE_ONLY" == "execution" ]]; then\n\
+  echo "Starting ONLY Execution..."\n\
+  cd /app/execution && exec dotnet CodeSync.Execution.dll --urls "http://0.0.0.0:${PORT:-10000}"\n\
+fi\n\
+if [[ "$RUN_SERVICE_ONLY" == "notification" ]]; then\n\
+  echo "Starting ONLY Notification..."\n\
+  cd /app/notification && exec dotnet CodeSync.Notification.dll --urls "http://0.0.0.0:${PORT:-10000}"\n\
+fi\n\
+if [[ "$RUN_SERVICE_ONLY" == "reviewhub" ]]; then\n\
+  echo "Starting ONLY ReviewHub..."\n\
+  cd /app/reviewhub && exec dotnet CodeSync.ReviewHub.dll --urls "http://0.0.0.0:${PORT:-10000}"\n\
+fi\n\
 \n\
 echo "Starting Auth (7001)..."\n\
 (cd /app/auth && ASPNETCORE_URLS=http://+:7001 dotnet CodeSync.Auth.dll &)\n\

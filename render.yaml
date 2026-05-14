@@ -57,9 +57,11 @@ services:
     name: codesync-execution
     env: docker
     rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.execution
+    dockerfilePath: Dockerfile.combined
     plan: free
     envVars:
+      - key: RUN_SERVICE_ONLY
+        value: "execution"
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
       - key: ConnectionStrings__ExecutionDb
@@ -74,9 +76,11 @@ services:
     name: codesync-notification
     env: docker
     rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.notification
+    dockerfilePath: Dockerfile.combined
     plan: free
     envVars:
+      - key: RUN_SERVICE_ONLY
+        value: "notification"
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
       - key: ConnectionStrings__NotificationDb
@@ -91,9 +95,11 @@ services:
     name: codesync-reviewhub
     env: docker
     rootDir: "OneDrive/Desktop/Code colabration"
-    dockerfilePath: Dockerfile.reviewhub
+    dockerfilePath: Dockerfile.combined
     plan: free
     envVars:
+      - key: RUN_SERVICE_ONLY
+        value: "reviewhub"
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
       - key: ConnectionStrings__ReviewHubDb
