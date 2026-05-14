@@ -101,25 +101,25 @@ namespace CodeSync.Execution.Services
                     filePath = Path.Combine(tempDir, "Program.cs");
                     await System.IO.File.WriteAllTextAsync(filePath, job.SourceCode);
                     
-                    // Run it inside the .NET SDK Docker container
-                    command = $"docker run {dockerOpts} mcr.microsoft.com/dotnet/sdk:8.0 dotnet run";
+                    // Run it directly
+                    command = $"dotnet run";
                 }
                 else if (language.Name.ToLower() == "python")
                 {
                     await System.IO.File.WriteAllTextAsync(filePath, job.SourceCode);
-                    command = $"docker run {dockerOpts} python:3.11 python {fileName}";
+                    command = $"python3 {fileName}";
                 }
                 else if (language.Name.ToLower() == "javascript")
                 {
                     await System.IO.File.WriteAllTextAsync(filePath, job.SourceCode);
-                    command = $"docker run {dockerOpts} node:20 node {fileName}";
+                    command = $"node {fileName}";
                 }
                 else if (language.Name.ToLower() == "java")
                 {
                     await System.IO.File.WriteAllTextAsync(filePath, job.SourceCode);
                     
-                    // Use Java 11+ single-file source-code execution so users don't have to name their class Main!
-                    command = $"docker run {dockerOpts} amazoncorretto:21 bash -c \"java {fileName}\"";
+                    // Use Java 11+ single-file source-code execution
+                    command = $"java {fileName}";
                 }
                 else
                 {
