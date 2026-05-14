@@ -63,9 +63,6 @@ fi\n\
 # Aggressive memory limits to prevent Render OOM crashes (512MB limit)\n\
 export DOTNET_gcServer=0\n\
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n\
-export DOTNET_GCHeapHardLimit=52428800\n\
-export DOTNET_ThreadPool_MinThreads=1\n\
-export DOTNET_ThreadPool_MaxThreads=20\n\
 \n\
 \n\
 echo "Starting Auth (7001)..."\n\
