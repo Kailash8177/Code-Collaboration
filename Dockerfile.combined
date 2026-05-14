@@ -16,12 +16,16 @@ RUN dotnet publish "CodeSync.Notification/CodeSync.Notification.csproj" -c Relea
 RUN dotnet publish "CodeSync.ReviewHub/CodeSync.ReviewHub.csproj" -c Release -o /app/reviewhub
 
 # 2. Runtime Stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS final
 WORKDIR /app
 
-# Install procps to allow process management if needed
+# Install procps, Python, Node.js, and Java
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends procps && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    procps \
+    python3 \
+    nodejs \
+    default-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the published outputs from the build stage
