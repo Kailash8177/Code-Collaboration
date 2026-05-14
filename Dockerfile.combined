@@ -84,17 +84,17 @@ echo "Starting Collab (7004)..."\n\
 (cd /app/collab && ASPNETCORE_URLS=http://+:7004 dotnet CodeSync.Collab.dll &)\n\
 sleep 5\n\
 \n\
-echo "Starting Execution (7005)..."\n\
-(cd /app/execution && ASPNETCORE_URLS=http://+:7005 dotnet CodeSync.Execution.dll &)\n\
-sleep 5\n\
+# echo "Starting Execution (7005)..."\n\
+# (cd /app/execution && ASPNETCORE_URLS=http://+:7005 dotnet CodeSync.Execution.dll &)\n\
+# sleep 5\n\
 \n\
-echo "Starting Notification (7007)..."\n\
-(cd /app/notification && ASPNETCORE_URLS=http://+:7007 dotnet CodeSync.Notification.dll &)\n\
-sleep 5\n\
+# echo "Starting Notification (7007)..."\n\
+# (cd /app/notification && ASPNETCORE_URLS=http://+:7007 dotnet CodeSync.Notification.dll &)\n\
+# sleep 5\n\
 \n\
-echo "Starting ReviewHub (7006)..."\n\
-(cd /app/reviewhub && ASPNETCORE_URLS=http://+:7006 dotnet CodeSync.ReviewHub.dll &)\n\
-sleep 15\n\
+# echo "Starting ReviewHub (7006)..."\n\
+# (cd /app/reviewhub && ASPNETCORE_URLS=http://+:7006 dotnet CodeSync.ReviewHub.dll &)\n\
+# sleep 5\n\
 \n\
 # Start the Gateway on port defined by Render ($PORT) or default to 10000\n\
 echo "Starting Gateway..."\n\
