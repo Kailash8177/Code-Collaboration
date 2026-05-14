@@ -46,7 +46,7 @@ services:
       - key: Jwt__Secret
         value: "CodeSync_Super_Secret_Key_For_JWT_123!"
       - key: ReverseProxy__Clusters__execution-cluster__Destinations__execution-primary__Address
-        value: https://codesync-execution.onrender.com
+        value: https://codesync-execution-64e6.onrender.com
       - key: ReverseProxy__Clusters__notification-cluster__Destinations__notification-primary__Address
         value: https://codesync-notification.onrender.com
       - key: ReverseProxy__Clusters__reviewhub-cluster__Destinations__reviewhub-primary__Address
