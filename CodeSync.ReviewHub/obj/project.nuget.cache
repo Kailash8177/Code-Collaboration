@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iEOlQfwvhoc=",
+  "dgSpecHash": "hLrb73jgb/U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.ReviewHub\\CodeSync.ReviewHub.csproj",
+  "projectFilePath": "C:\\Code-Collaboration\\CodeSync.ReviewHub\\CodeSync.ReviewHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\diffplex\\1.7.2\\diffplex.1.7.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

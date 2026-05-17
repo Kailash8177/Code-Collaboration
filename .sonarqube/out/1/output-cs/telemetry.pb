@@ -1,0 +1,1 @@
+ER8C:\Code-Collaboration\CodeSync.Auth\CodeSync.Auth.csprojòCSharp12

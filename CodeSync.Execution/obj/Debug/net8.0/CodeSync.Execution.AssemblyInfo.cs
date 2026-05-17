@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeSync.Execution")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c76275991e4424ce4a5e7d5e9cadd92211bfe2df")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeSync.Execution")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeSync.Execution")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

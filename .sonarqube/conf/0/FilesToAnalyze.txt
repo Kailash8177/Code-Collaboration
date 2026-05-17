@@ -1,0 +1,8 @@
+﻿C:\Code-Collaboration\CodeSync.Events\CollabEvents.cs
+C:\Code-Collaboration\CodeSync.Events\CommentEvents.cs
+C:\Code-Collaboration\CodeSync.Events\ExecutionEvents.cs
+C:\Code-Collaboration\CodeSync.Events\FileEvents.cs
+C:\Code-Collaboration\CodeSync.Events\NotificationEvents.cs
+C:\Code-Collaboration\CodeSync.Events\ProjectEvents.cs
+C:\Code-Collaboration\CodeSync.Events\UserEvents.cs
+C:\Code-Collaboration\CodeSync.Events\VersionEvents.cs

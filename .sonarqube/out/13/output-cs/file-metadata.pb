@@ -1,0 +1,12 @@
+a
+VC:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfo.csutf-8p
+eC:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8c
+XC:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.GlobalUsings.g.csutf-8?
+6C:\Code-Collaboration\CodeSync.Events\VersionEvents.csutf-8<
+3C:\Code-Collaboration\CodeSync.Events\UserEvents.csutf-8?
+6C:\Code-Collaboration\CodeSync.Events\ProjectEvents.csutf-8D
+;C:\Code-Collaboration\CodeSync.Events\NotificationEvents.csutf-8<
+3C:\Code-Collaboration\CodeSync.Events\FileEvents.csutf-8A
+8C:\Code-Collaboration\CodeSync.Events\ExecutionEvents.csutf-8?
+6C:\Code-Collaboration\CodeSync.Events\CommentEvents.csutf-8>
+5C:\Code-Collaboration\CodeSync.Events\CollabEvents.csutf-8

@@ -1,0 +1,1 @@
+KR>C:\Code-Collaboration\CodeSync.Gateway\CodeSync.Gateway.csprojòCSharp12

@@ -22,3 +22,16 @@ C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\
 C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\refint\CodeSync.Events.dll
 C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.pdb
 C:\Users\hp\OneDrive\Desktop\Code colabration\backend\CodeSync.Events\obj\Debug\net8.0\ref\CodeSync.Events.dll
+C:\Code-Collaboration\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.deps.json
+C:\Code-Collaboration\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.dll
+C:\Code-Collaboration\CodeSync.Events\bin\Debug\net8.0\CodeSync.Events.pdb
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.AssemblyReference.cache
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfoInputs.cache
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.AssemblyInfo.cs
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.csproj.CoreCompileInputs.cache
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.sourcelink.json
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.dll
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\refint\CodeSync.Events.dll
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\CodeSync.Events.pdb
+C:\Code-Collaboration\CodeSync.Events\obj\Debug\net8.0\ref\CodeSync.Events.dll

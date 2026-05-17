@@ -1,0 +1,37 @@
+Product projects
+---------------------------------------
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Auth\CodeSync.Auth.csproj
+C:\Code-Collaboration\CodeSync.Notification\CodeSync.Notification.csproj
+C:\Code-Collaboration\CodeSync.Project\CodeSync.Project.csproj
+C:\Code-Collaboration\CodeSync.ReviewHub\CodeSync.ReviewHub.csproj
+C:\Code-Collaboration\CodeSync.Collab\CodeSync.Collab.csproj
+C:\Code-Collaboration\CodeSync.Execution\CodeSync.Execution.csproj
+C:\Code-Collaboration\CodeSync.File\CodeSync.File.csproj
+C:\Code-Collaboration\CodeSync.Gateway\CodeSync.Gateway.csproj
+
+
+Test projects
+---------------------------------------
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+C:\Code-Collaboration\CodeSync.Events\CodeSync.Events.csproj
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

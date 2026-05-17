@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>CodeSync.ReviewHub</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>0e16d36f-14d3-4718-973f-b3852129b907</ProjectGuid>
+  <FullPath>C:\Code-Collaboration\CodeSync.ReviewHub\CodeSync.ReviewHub.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Code-Collaboration\.sonarqube\conf\14\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Code-Collaboration\.sonarqube\out\14\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Code-Collaboration\.sonarqube\out\14</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\Code-Collaboration\.sonarqube\out\14\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

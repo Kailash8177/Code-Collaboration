@@ -1,0 +1,10 @@
+v
+kC:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.MvcApplicationPartsAssemblyInfo.csutf-8c
+XC:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.AssemblyInfo.csutf-8q
+fC:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8V
+MC:\Code-Collaboration\CodeSync.Gateway\Transforms\GatewayTransformProvider.csutf-8e
+ZC:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.GlobalUsings.g.csutf-8:
+1C:\Code-Collaboration\CodeSync.Gateway\Program.csutf-8V
+MC:\Code-Collaboration\CodeSync.Gateway\Middleware\RequestLoggingMiddleware.csutf-8Y
+PC:\Code-Collaboration\CodeSync.Gateway\Controllers\ProxyDiagnosticsController.csutf-8P
+GC:\Code-Collaboration\CodeSync.Gateway\Controllers\GatewayController.csutf-8

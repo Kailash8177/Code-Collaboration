@@ -1,0 +1,656 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.2.1"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1778909986000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "CodeSync"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Code-Collaboration"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Code-Collaboration\\frontend\\codesync-ui\\angular.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\package-lock.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\package.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\tsconfig.app.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\tsconfig.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\tsconfig.spec.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\.vscode\\extensions.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\.vscode\\launch.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\.vscode\\mcp.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\.vscode\\tasks.json,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\index.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\main.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\styles.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.config.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.routes.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\environments\\environment.prod.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\environments\\environment.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\guards\\admin.guard.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\admin.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\auth.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\collab.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\comment.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\execution.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\file.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\notification.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\project.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\snapshot.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\components\\navbar\\navbar.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\components\\navbar\\navbar.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\components\\navbar\\navbar.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\core\\guards\\auth-guard.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\core\\interceptors\\jwt-interceptor.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\admin\\admin.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\admin\\admin.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\admin\\admin.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\create-project\\create-project.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\create-project\\create-project.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\create-project\\create-project.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\dashboard\\dashboard.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\dashboard\\dashboard.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\dashboard\\dashboard.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\editor\\editor.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\editor\\editor.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\editor\\editor.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\explore\\explore.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\explore\\explore.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\explore\\explore.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\home\\home.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\home\\home.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\home\\home.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\login\\login.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\login\\login.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\login\\login.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\project-detail\\project-detail.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\project-detail\\project-detail.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\project-detail\\project-detail.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\signup\\signup.css,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\signup\\signup.html,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\signup\\signup.ts,C:\\Code-Collaboration\\docker-compose.yml,C:\\Code-Collaboration\\Dockerfile.combined,C:\\Code-Collaboration\\Dockerfile.execution,C:\\Code-Collaboration\\Dockerfile.notification,C:\\Code-Collaboration\\Dockerfile.reviewhub,C:\\Code-Collaboration\\render.yaml"
+    },
+    {
+      "key": "sonar.tests",
+      "value": "C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\app.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\auth.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\collab.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\comment.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\execution.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\file.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\notification.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\project.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\services\\snapshot.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\components\\navbar\\navbar.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\core\\guards\\auth-guard.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\core\\interceptors\\jwt-interceptor.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\create-project\\create-project.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\dashboard\\dashboard.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\editor\\editor.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\explore\\explore.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\home\\home.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\login\\login.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\project-detail\\project-detail.spec.ts,C:\\Code-Collaboration\\frontend\\codesync-ui\\src\\app\\pages\\signup\\signup.spec.ts"
+    },
+    {
+      "key": "sonar.modules",
+      "value": "4093B674-FA66-48DF-BA0B-B834B3CB70B1,A2E7FB21-F786-4465-AB0D-04C3F060D653,C833F1B7-15E3-4F97-8830-F09F77D566E7,50F1683A-DD17-4D01-BB9D-4DDF018DC4B9,26774D18-F68B-47A1-92A7-27A30A81EAEB,10B9A275-0751-4D0D-8632-544E54E6F2A4,0E16D36F-14D3-4718-973F-B3852129B907,956DE93A-CB68-489B-A91C-B428AC5543D0,CD79DAAC-962E-4623-9E2F-B0054E3E6516,E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3,28482E5A-79C6-4661-BF37-E609DA885ED5,DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05,00A56EBF-959C-4AAA-A52E-77D90BD51999,F8E62283-852D-4169-BDD9-4C8B27BAAA58,C78F4510-FC5A-4074-A5B5-390F9092C59E"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.projectKey",
+      "value": "CodeSync:4093B674-FA66-48DF-BA0B-B834B3CB70B1"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events\\CollabEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\CommentEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\ExecutionEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\FileEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\NotificationEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\ProjectEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\UserEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\VersionEvents.cs,C:\\Code-Collaboration\\CodeSync.Events\\obj\\CodeSync.Events.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Events\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Events\\bin\\Debug\\net8.0\\CodeSync.Events.deps.json,C:\\Code-Collaboration\\CodeSync.Events\\obj\\Debug\\net8.0\\CodeSync.Events.sourcelink.json"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "4093B674-FA66-48DF-BA0B-B834B3CB70B1.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.projectKey",
+      "value": "CodeSync:A2E7FB21-F786-4465-AB0D-04C3F060D653"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.projectName",
+      "value": "CodeSync.Auth"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Auth"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Auth\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Auth\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Auth\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\CodeSync.Auth.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Auth\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Auth\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Auth\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Auth\\bin\\Debug\\net8.0\\CodeSync.Auth.deps.json,C:\\Code-Collaboration\\CodeSync.Auth\\bin\\Debug\\net8.0\\CodeSync.Auth.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Auth\\bin\\Debug\\net8.0\\CodeSync.Auth.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\CodeSync.Auth.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Auth\\Consumers\\UserDeactivatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Controllers\\AuthController.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Data\\AuthDbContext.cs,C:\\Code-Collaboration\\CodeSync.Auth\\DTOs\\AuthDTOs.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Migrations\\20260420100304_InitialCreate.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Migrations\\20260420100304_InitialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Migrations\\20260424224536_AddSagaSupport.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Migrations\\20260424224536_AddSagaSupport.Designer.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Migrations\\AuthDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Models\\RefreshTokenEntry.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Models\\User.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Program.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Repositories\\IUserRepository.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Repositories\\UserRepository.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Services\\AuthServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.Auth\\Services\\IAuthService.cs,C:\\Code-Collaboration\\CodeSync.Auth\\temp.cs,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\CodeSync.Auth.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\CodeSync.Auth.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Auth\\obj\\Debug\\net8.0\\CodeSync.Auth.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Auth\\CodeSync.Auth.http"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "A2E7FB21-F786-4465-AB0D-04C3F060D653.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.projectKey",
+      "value": "CodeSync:C833F1B7-15E3-4F97-8830-F09F77D566E7"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.projectName",
+      "value": "CodeSync.Notification"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Notification"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Notification\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Notification\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Notification\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\CodeSync.Notification.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Notification\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net10.0\\CodeSync.Notification.deps.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net10.0\\CodeSync.Notification.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net10.0\\CodeSync.Notification.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net8.0\\CodeSync.Notification.deps.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net8.0\\CodeSync.Notification.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Notification\\bin\\Debug\\net8.0\\CodeSync.Notification.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\CodeSync.Notification.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\CodeExecutedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\MemberAddedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\MentionDetectedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\ParticipantJoinedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\ParticipantKickedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\ProjectForkedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\SessionStartedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\SnapshotCreatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Consumers\\UserRegisteredConsumer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Controllers\\NotificationController.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Data\\NotificationDbContext.cs,C:\\Code-Collaboration\\CodeSync.Notification\\DTOs\\NotificationDTOs.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Hubs\\NotificationHub.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Migrations\\20260427093856_InitialCreate.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Migrations\\20260427093856_InitialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Migrations\\NotificationDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Models\\Notification.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Program.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Repositories\\INotificationRepository.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Repositories\\NotificationRepository.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Services\\INotificationService.cs,C:\\Code-Collaboration\\CodeSync.Notification\\Services\\NotificationServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\CodeSync.Notification.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\CodeSync.Notification.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Notification\\obj\\Debug\\net8.0\\CodeSync.Notification.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Notification\\CodeSync.Notification.http"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\10"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\10\\Issues.json"
+    },
+    {
+      "key": "C833F1B7-15E3-4F97-8830-F09F77D566E7.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\10\\Telemetry.json"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.projectKey",
+      "value": "CodeSync:50F1683A-DD17-4D01-BB9D-4DDF018DC4B9"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod3"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\11"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\11\\Issues.json"
+    },
+    {
+      "key": "50F1683A-DD17-4D01-BB9D-4DDF018DC4B9.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\11\\Telemetry.json"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.projectKey",
+      "value": "CodeSync:26774D18-F68B-47A1-92A7-27A30A81EAEB"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.projectName",
+      "value": "CodeSync.Project"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Project"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod4"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Project\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Project\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Project\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Project\\obj\\CodeSync.Project.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Project\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net10.0\\CodeSync.Project.deps.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net10.0\\CodeSync.Project.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net10.0\\CodeSync.Project.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net8.0\\CodeSync.Project.deps.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net8.0\\CodeSync.Project.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Project\\bin\\Debug\\net8.0\\CodeSync.Project.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\CodeSync.Project.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Project\\Consumers\\UserDeactivatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Project\\Controllers\\ProjectController.cs,C:\\Code-Collaboration\\CodeSync.Project\\Data\\ProjectDbContext.cs,C:\\Code-Collaboration\\CodeSync.Project\\DTOs\\ProjectDTOs.cs,C:\\Code-Collaboration\\CodeSync.Project\\Migrations\\20260421091813_InitialCreate.cs,C:\\Code-Collaboration\\CodeSync.Project\\Migrations\\20260421091813_InitialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.Project\\Migrations\\20260424225422_AddSagaSupport.cs,C:\\Code-Collaboration\\CodeSync.Project\\Migrations\\20260424225422_AddSagaSupport.Designer.cs,C:\\Code-Collaboration\\CodeSync.Project\\Migrations\\ProjectDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.Project\\Models\\Project.cs,C:\\Code-Collaboration\\CodeSync.Project\\Program.cs,C:\\Code-Collaboration\\CodeSync.Project\\Repositories\\IProjectRepository.cs,C:\\Code-Collaboration\\CodeSync.Project\\Repositories\\ProjectRepository.cs,C:\\Code-Collaboration\\CodeSync.Project\\Services\\IProjectService.cs,C:\\Code-Collaboration\\CodeSync.Project\\Services\\ProjectServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\CodeSync.Project.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\CodeSync.Project.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Project\\obj\\Debug\\net8.0\\CodeSync.Project.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Project\\CodeSync.Project.http,C:\\Code-Collaboration\\CodeSync.Project\\query.sql"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\12"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\12\\Issues.json"
+    },
+    {
+      "key": "26774D18-F68B-47A1-92A7-27A30A81EAEB.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\12\\Telemetry.json"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.projectKey",
+      "value": "CodeSync:10B9A275-0751-4D0D-8632-544E54E6F2A4"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod5"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\13"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\13\\Issues.json"
+    },
+    {
+      "key": "10B9A275-0751-4D0D-8632-544E54E6F2A4.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\13\\Telemetry.json"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.projectKey",
+      "value": "CodeSync:0E16D36F-14D3-4718-973F-B3852129B907"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.projectName",
+      "value": "CodeSync.ReviewHub"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.ReviewHub"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod6"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.ReviewHub\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\appsettings.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\CodeSync.ReviewHub.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net10.0\\CodeSync.ReviewHub.deps.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net10.0\\CodeSync.ReviewHub.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net10.0\\CodeSync.ReviewHub.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net8.0\\CodeSync.ReviewHub.deps.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net8.0\\CodeSync.ReviewHub.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\bin\\Debug\\net8.0\\CodeSync.ReviewHub.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\CodeSync.ReviewHub.sourcelink.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Consumers\\FileCreatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Consumers\\FileDeletedConsumer.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Consumers\\ProjectDeletedConsumer.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Controllers\\CommentController.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Controllers\\SnapshotController.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Data\\ReviewHubDbContext.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\DTOs\\ReviewHubDTOs.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Migrations\\20260427070905_IntialCreate.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Migrations\\20260427070905_IntialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Migrations\\ReviewHubDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Models\\ReviewHubModels.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Program.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Repositories\\CommentRepository.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Repositories\\ICommentRepository.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Repositories\\ISnapshotRepository.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Repositories\\SnapshotRepository.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Services\\CommentServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Services\\ICommentService.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Services\\ISnapshotService.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\Services\\SnapshotServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\CodeSync.ReviewHub.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\CodeSync.ReviewHub.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\obj\\Debug\\net8.0\\CodeSync.ReviewHub.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.ReviewHub\\CodeSync.ReviewHub.http"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\14"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\14\\Issues.json"
+    },
+    {
+      "key": "0E16D36F-14D3-4718-973F-B3852129B907.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\14\\Telemetry.json"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.projectKey",
+      "value": "CodeSync:956DE93A-CB68-489B-A91C-B428AC5543D0"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod7"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\2"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\2\\Issues.json"
+    },
+    {
+      "key": "956DE93A-CB68-489B-A91C-B428AC5543D0.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\2\\Telemetry.json"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.projectKey",
+      "value": "CodeSync:CD79DAAC-962E-4623-9E2F-B0054E3E6516"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.projectName",
+      "value": "CodeSync.Collab"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Collab"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod8"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Collab\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Collab\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Collab\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\CodeSync.Collab.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Collab\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net10.0\\CodeSync.Collab.deps.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net10.0\\CodeSync.Collab.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net10.0\\CodeSync.Collab.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net8.0\\CodeSync.Collab.deps.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net8.0\\CodeSync.Collab.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Collab\\bin\\Debug\\net8.0\\CodeSync.Collab.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\CodeSync.Collab.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Collab\\Consumers\\UserDeactivatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Controllers\\CollabController.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Data\\CollabDbContext.cs,C:\\Code-Collaboration\\CodeSync.Collab\\DTOs\\CollabDTOs.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Hubs\\CollabHub.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Migrations\\20260426072638_InitialCreate.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Migrations\\20260426072638_InitialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Migrations\\CollabDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Models\\CollabSession.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Program.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Repositories\\CollabRepository.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Repositories\\ICollabRepository.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Services\\CollabServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.Collab\\Services\\ICollabService.cs,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\CodeSync.Collab.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\CodeSync.Collab.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Collab\\obj\\Debug\\net8.0\\CodeSync.Collab.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Collab\\CodeSync.Collab.http"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\3"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\3\\Issues.json"
+    },
+    {
+      "key": "CD79DAAC-962E-4623-9E2F-B0054E3E6516.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\3\\Telemetry.json"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.projectKey",
+      "value": "CodeSync:E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod9"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\4"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\4\\Issues.json"
+    },
+    {
+      "key": "E33D1ADE-760B-407C-8CDD-B0B3AD27B3B3.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\4\\Telemetry.json"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.projectKey",
+      "value": "CodeSync:28482E5A-79C6-4661-BF37-E609DA885ED5"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.projectName",
+      "value": "CodeSync.Execution"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Execution"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod10"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Execution\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Execution\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Execution\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\CodeSync.Execution.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Execution\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net10.0\\CodeSync.Execution.deps.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net10.0\\CodeSync.Execution.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net10.0\\CodeSync.Execution.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net8.0\\CodeSync.Execution.deps.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net8.0\\CodeSync.Execution.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Execution\\bin\\Debug\\net8.0\\CodeSync.Execution.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\CodeSync.Execution.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Execution\\Controllers\\ExecutionController.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Data\\ExecutionDbContext.cs,C:\\Code-Collaboration\\CodeSync.Execution\\DTOs\\ExecutionDTOs.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Migrations\\20260426074444_InitialCreate.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Migrations\\20260426074444_InitialCreate.Designer.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Migrations\\20260427062032_ReduceLanguages.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Migrations\\20260427062032_ReduceLanguages.Designer.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Migrations\\ExecutionDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Models\\ExecutionJob.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Program.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Repositories\\ExecutionRepository.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Repositories\\IExecutionRepository.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Services\\ExecutionServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.Execution\\Services\\IExecutionService.cs,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\CodeSync.Execution.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\CodeSync.Execution.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Execution\\obj\\Debug\\net8.0\\CodeSync.Execution.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Execution\\CodeSync.Execution.http,C:\\Code-Collaboration\\CodeSync.Execution\\update.sql"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\5"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\5\\Issues.json"
+    },
+    {
+      "key": "28482E5A-79C6-4661-BF37-E609DA885ED5.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\5\\Telemetry.json"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.projectKey",
+      "value": "CodeSync:DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod11"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\6"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\6\\Issues.json"
+    },
+    {
+      "key": "DD067FF6-A6D1-48C3-B3AA-3C8C7FD7CC05.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\6\\Telemetry.json"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.projectKey",
+      "value": "CodeSync:00A56EBF-959C-4AAA-A52E-77D90BD51999"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.projectName",
+      "value": "CodeSync.File"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.File"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod12"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.File\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.File\\appsettings.json,C:\\Code-Collaboration\\CodeSync.File\\Dockerfile,C:\\Code-Collaboration\\CodeSync.File\\obj\\CodeSync.File.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.File\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net10.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net10.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net10.0\\CodeSync.File.deps.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net10.0\\CodeSync.File.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net10.0\\CodeSync.File.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net8.0\\CodeSync.File.deps.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net8.0\\CodeSync.File.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.File\\bin\\Debug\\net8.0\\CodeSync.File.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net10.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\CodeSync.File.sourcelink.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.File\\Consumers\\ProjectCreatedConsumer.cs,C:\\Code-Collaboration\\CodeSync.File\\Consumers\\ProjectDeletedConsumer.cs,C:\\Code-Collaboration\\CodeSync.File\\Controllers\\FileController.cs,C:\\Code-Collaboration\\CodeSync.File\\Data\\FileDbContext.cs,C:\\Code-Collaboration\\CodeSync.File\\DTOs\\FileDTOs.cs,C:\\Code-Collaboration\\CodeSync.File\\Migrations\\20260425114520_AddSagaSupport.cs,C:\\Code-Collaboration\\CodeSync.File\\Migrations\\20260425114520_AddSagaSupport.Designer.cs,C:\\Code-Collaboration\\CodeSync.File\\Migrations\\FileDbContextModelSnapshot.cs,C:\\Code-Collaboration\\CodeSync.File\\Models\\CodeFile.cs,C:\\Code-Collaboration\\CodeSync.File\\Program.cs,C:\\Code-Collaboration\\CodeSync.File\\Repositories\\FileRepository.cs,C:\\Code-Collaboration\\CodeSync.File\\Repositories\\IFileRepository.cs,C:\\Code-Collaboration\\CodeSync.File\\Services\\FileServiceImpl.cs,C:\\Code-Collaboration\\CodeSync.File\\Services\\IFileService.cs,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\CodeSync.File.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\CodeSync.File.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.File\\obj\\Debug\\net8.0\\CodeSync.File.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.File\\CodeSync.File.http"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\7"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\7\\Issues.json"
+    },
+    {
+      "key": "00A56EBF-959C-4AAA-A52E-77D90BD51999.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\7\\Telemetry.json"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.projectKey",
+      "value": "CodeSync:F8E62283-852D-4169-BDD9-4C8B27BAAA58"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.projectName",
+      "value": "CodeSync.Gateway"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Gateway"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod13"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.sources",
+      "value": "C:\\Code-Collaboration\\CodeSync.Gateway\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Gateway\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Gateway\\Dockerfile,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\CodeSync.Gateway.csproj.nuget.dgspec.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\project.assets.json,C:\\Code-Collaboration\\CodeSync.Gateway\\Properties\\launchSettings.json,C:\\Code-Collaboration\\CodeSync.Gateway\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Code-Collaboration\\CodeSync.Gateway\\bin\\Debug\\net8.0\\appsettings.json,C:\\Code-Collaboration\\CodeSync.Gateway\\bin\\Debug\\net8.0\\CodeSync.Gateway.deps.json,C:\\Code-Collaboration\\CodeSync.Gateway\\bin\\Debug\\net8.0\\CodeSync.Gateway.runtimeconfig.json,C:\\Code-Collaboration\\CodeSync.Gateway\\bin\\Debug\\net8.0\\CodeSync.Gateway.staticwebassets.endpoints.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\CodeSync.Gateway.sourcelink.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\rjsmcshtml.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\rjsmrazor.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\rpswa.dswa.cache.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Code-Collaboration\\CodeSync.Gateway\\Controllers\\GatewayController.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\Controllers\\ProxyDiagnosticsController.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\Middleware\\RequestLoggingMiddleware.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\Program.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\Transforms\\GatewayTransformProvider.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\CodeSync.Gateway.GlobalUsings.g.cs,\"C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\CodeSync.Gateway.AssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\Debug\\net8.0\\CodeSync.Gateway.MvcApplicationPartsAssemblyInfo.cs,C:\\Code-Collaboration\\CodeSync.Gateway\\CodeSync.Gateway.http"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\8"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\8\\Issues.json"
+    },
+    {
+      "key": "F8E62283-852D-4169-BDD9-4C8B27BAAA58.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\8\\Telemetry.json"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.projectKey",
+      "value": "CodeSync:C78F4510-FC5A-4074-A5B5-390F9092C59E"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.projectName",
+      "value": "CodeSync.Events"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.projectBaseDir",
+      "value": "C:\\Code-Collaboration\\CodeSync.Events"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.working.directory",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\.sonar\\mod14"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\9"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\9\\Issues.json"
+    },
+    {
+      "key": "C78F4510-FC5A-4074-A5B5-390F9092C59E.sonar.cs.scanner.telemetry",
+      "value": "C:\\Code-Collaboration\\.sonarqube\\out\\9\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}

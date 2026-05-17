@@ -1997,11 +1997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Gateway\\CodeSync.Gateway.csproj",
+      "projectUniqueName": "C:\\Code-Collaboration\\CodeSync.Gateway\\CodeSync.Gateway.csproj",
       "projectName": "CodeSync.Gateway",
-      "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Gateway\\CodeSync.Gateway.csproj",
+      "projectPath": "C:\\Code-Collaboration\\CodeSync.Gateway\\CodeSync.Gateway.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Gateway\\obj\\",
+      "outputPath": "C:\\Code-Collaboration\\CodeSync.Gateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

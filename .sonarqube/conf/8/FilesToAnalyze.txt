@@ -1,0 +1,14 @@
+﻿C:\Code-Collaboration\CodeSync.Gateway\Controllers\GatewayController.cs
+C:\Code-Collaboration\CodeSync.Gateway\Controllers\ProxyDiagnosticsController.cs
+C:\Code-Collaboration\CodeSync.Gateway\Middleware\RequestLoggingMiddleware.cs
+C:\Code-Collaboration\CodeSync.Gateway\Program.cs
+C:\Code-Collaboration\CodeSync.Gateway\Transforms\GatewayTransformProvider.cs
+C:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.GlobalUsings.g.cs
+C:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.AssemblyInfo.cs
+C:\Code-Collaboration\CodeSync.Gateway\obj\Debug\net8.0\CodeSync.Gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Code-Collaboration\CodeSync.Gateway\appsettings.Development.json
+C:\Code-Collaboration\CodeSync.Gateway\appsettings.json
+C:\Code-Collaboration\CodeSync.Gateway\CodeSync.Gateway.http
+C:\Code-Collaboration\CodeSync.Gateway\Dockerfile
+C:\Code-Collaboration\CodeSync.Gateway\Properties\launchSettings.json

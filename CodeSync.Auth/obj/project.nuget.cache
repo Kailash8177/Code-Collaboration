@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yk1xw9qZ8j4=",
+  "dgSpecHash": "7ty5dc3Kg6o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Auth\\CodeSync.Auth.csproj",
+  "projectFilePath": "C:\\Code-Collaboration\\CodeSync.Auth\\CodeSync.Auth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\8.0.1\\aspnetcore.healthchecks.npgsql.8.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

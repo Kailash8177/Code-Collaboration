@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "egqBcUA2SH8=",
+  "dgSpecHash": "Fo9i+KTm2jE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Notification\\CodeSync.Notification.csproj",
+  "projectFilePath": "C:\\Code-Collaboration\\CodeSync.Notification\\CodeSync.Notification.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -79,9 +79,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'MailKit' 4.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9j88-vvj5-vhgr",
-      "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Notification\\CodeSync.Notification.csproj",
+      "projectPath": "C:\\Code-Collaboration\\CodeSync.Notification\\CodeSync.Notification.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\hp\\OneDrive\\Desktop\\Code colabration\\backend\\CodeSync.Notification\\CodeSync.Notification.csproj",
+      "filePath": "C:\\Code-Collaboration\\CodeSync.Notification\\CodeSync.Notification.csproj",
       "libraryId": "MailKit",
       "targetGraphs": [
         "net8.0"
